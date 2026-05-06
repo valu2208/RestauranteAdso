@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,11 @@
                 <li><a href="#menu">Menú</a></li>
                 <li><a href="#Promociones">Promociones</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-            </ul>
+                <li><a href="#carrito" class="cart-link"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count" class="cart-count">0</span></a></li>
+                </ul>
+            <div class="nav-icons">
+                
+            </div>     
         </nav>
     </header>
     <!----seccion del hero-->
@@ -28,7 +32,9 @@
             <h2>Bienvenido a Fast Food Paradise</h2>
             <p>Las mejores hamburguesas, pizzas y mas en la ciudad</p>
             <button class="cta-button">Ordena Ahora</button>
+            
         </div>
+        
     </section>
     <!---Seccion de Menu-->
     <section id="menu" class="menu-section">
@@ -149,5 +155,7 @@
                 <p>&copy;2025 Fast Food Paradise. Todos los derechos</p>
             </div>
     </footer>
+    <div id="toast" class="toast">Producto agregado</div>
+    <script src="js/mensaje.js"></script>
 </body>
 </html>

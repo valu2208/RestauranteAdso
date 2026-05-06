@@ -42,9 +42,18 @@ header{
 .nav-links a:hover{
     color:rgb(33, 2, 7)
 }
+
+.nav-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
 .hero{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url("https://media.istockphoto.com/id/2240611206/photo/delicious-gourmet-picanha-burger-with-cheddar-bacon-cheese-and-special-sauce-ready-to-eat.jpg?s=612x612&w=is&k=20&c=pxh6QZOY_8xSMiS6y2q36b6U6RLNPU2ON_4IA7vd-1w=")center/cover;
+    url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=999&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")center/cover;
     height: 620px;
     display: flex;
     align-items: center;
@@ -92,7 +101,7 @@ header{
 .menu-card{
     background-color: white;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden;  
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
@@ -203,6 +212,51 @@ footer{
     text-align: center;
     padding-top: 32px;
     border-top: 1px solid #902c08;
+}
+
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #ff6b35;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 2000;
+    top: 80px; 
+    right: 5%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    opacity: 0; 
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.toast.show {
+    visibility: visible;
+    opacity: 1; /* Se hace visible */
+    transform: translateY(0); /* Se mueve a su posición normal */
+}
+.cart-link {
+    position: relative; /* Posicionamiento relativo para el contador */
+    display: inline-block;
+}
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background-color: white; /* Círculo blanco */
+    color: #c6570d; /* Texto verde SENA */
+    font-size: 0.75rem;
+    font-weight: bold;
+    min-width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Forma circular */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 /*Responsive*/
 /*pantallas menores a 768*/
